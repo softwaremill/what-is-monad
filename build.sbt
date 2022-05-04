@@ -17,6 +17,7 @@ lazy val core: Project = (project in file("core"))
   .settings(
     name := "core",
     libraryDependencies ++= Seq(
-      scalaTest
+      scalaTest,
+      "org.typelevel" %% "cats-effect" % "3.3.11"
     )
   )
